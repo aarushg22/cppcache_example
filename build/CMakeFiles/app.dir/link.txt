@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/app.dir/src/main.cpp.o  -o app libcache_lib.a 
+/usr/bin/c++     CMakeFiles/app.dir/src/main.cpp.o  -o app -lpthread 

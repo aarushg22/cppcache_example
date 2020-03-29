@@ -1,0 +1,52 @@
+Start testing: Mar 30 05:14 +08
+----------------------------------------------------------
+1/2 Testing: app_cppcache_test
+1/2 Test: app_cppcache_test
+Command: "/home/batman/Documents/personal/cppcache/build/tests/app_cppcache_test"
+Directory: /home/batman/Documents/personal/cppcache/build/tests
+"app_cppcache_test" start time: Mar 30 05:14 +08
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from Cppcache
+[ RUN      ] Cppcache.cache_size
+[       OK ] Cppcache.cache_size (0 ms)
+[ RUN      ] Cppcache.write_to_cache
+[       OK ] Cppcache.write_to_cache (0 ms)
+[ RUN      ] Cppcache.read_from_cache
+[       OK ] Cppcache.read_from_cache (0 ms)
+[ RUN      ] Cppcache.dirty_update_cache
+[       OK ] Cppcache.dirty_update_cache (0 ms)
+[----------] 4 tests from Cppcache (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"app_cppcache_test" end time: Mar 30 05:14 +08
+"app_cppcache_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: app_fileio_test
+2/2 Test: app_fileio_test
+Command: "/home/batman/Documents/personal/cppcache/build/tests/app_fileio_test"
+Directory: /home/batman/Documents/personal/cppcache/build/tests
+"app_fileio_test" start time: Mar 30 05:14 +08
+Output:
+----------------------------------------------------------
+[==========] Running 0 tests from 0 test cases.
+[==========] 0 tests from 0 test cases ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"app_fileio_test" end time: Mar 30 05:14 +08
+"app_fileio_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 30 05:14 +08

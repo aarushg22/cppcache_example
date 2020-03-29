@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/batman/Documents/personal/cppcache/build/CMakeFiles /home/batman/Documents/personal/cppcache/build/CMakeFiles/progress.marks
@@ -111,19 +122,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cache_lib
-
-# Build rule for target.
-cache_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cache_lib
-.PHONY : cache_lib
-
-# fast build rule for target.
-cache_lib/fast:
-	$(MAKE) -f CMakeFiles/cache_lib.dir/build.make CMakeFiles/cache_lib.dir/build
-.PHONY : cache_lib/fast
-
-#=============================================================================
 # Target rules for targets named app
 
 # Build rule for target.
@@ -136,32 +134,31 @@ app/fast:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
-src/cppcache.o: src/cppcache.cpp.o
+#=============================================================================
+# Target rules for targets named app_cppcache_test
 
-.PHONY : src/cppcache.o
+# Build rule for target.
+app_cppcache_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 app_cppcache_test
+.PHONY : app_cppcache_test
 
-# target to build an object file
-src/cppcache.cpp.o:
-	$(MAKE) -f CMakeFiles/cache_lib.dir/build.make CMakeFiles/cache_lib.dir/src/cppcache.cpp.o
-.PHONY : src/cppcache.cpp.o
+# fast build rule for target.
+app_cppcache_test/fast:
+	$(MAKE) -f tests/CMakeFiles/app_cppcache_test.dir/build.make tests/CMakeFiles/app_cppcache_test.dir/build
+.PHONY : app_cppcache_test/fast
 
-src/cppcache.i: src/cppcache.cpp.i
+#=============================================================================
+# Target rules for targets named app_fileio_test
 
-.PHONY : src/cppcache.i
+# Build rule for target.
+app_fileio_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 app_fileio_test
+.PHONY : app_fileio_test
 
-# target to preprocess a source file
-src/cppcache.cpp.i:
-	$(MAKE) -f CMakeFiles/cache_lib.dir/build.make CMakeFiles/cache_lib.dir/src/cppcache.cpp.i
-.PHONY : src/cppcache.cpp.i
-
-src/cppcache.s: src/cppcache.cpp.s
-
-.PHONY : src/cppcache.s
-
-# target to generate assembly for a file
-src/cppcache.cpp.s:
-	$(MAKE) -f CMakeFiles/cache_lib.dir/build.make CMakeFiles/cache_lib.dir/src/cppcache.cpp.s
-.PHONY : src/cppcache.cpp.s
+# fast build rule for target.
+app_fileio_test/fast:
+	$(MAKE) -f tests/CMakeFiles/app_fileio_test.dir/build.make tests/CMakeFiles/app_fileio_test.dir/build
+.PHONY : app_fileio_test/fast
 
 src/main.o: src/main.cpp.o
 
@@ -197,12 +194,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... cache_lib"
 	@echo "... edit_cache"
 	@echo "... app"
-	@echo "... src/cppcache.o"
-	@echo "... src/cppcache.i"
-	@echo "... src/cppcache.s"
+	@echo "... test"
+	@echo "... app_cppcache_test"
+	@echo "... app_fileio_test"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

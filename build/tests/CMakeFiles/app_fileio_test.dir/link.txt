@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/app_fileio_test.dir/tests_file_io.cpp.o  -o app_fileio_test /usr/lib/libgtest.a -lpthread 

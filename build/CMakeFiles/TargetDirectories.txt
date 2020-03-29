@@ -1,4 +1,9 @@
 /home/batman/Documents/personal/cppcache/build/CMakeFiles/rebuild_cache.dir
-/home/batman/Documents/personal/cppcache/build/CMakeFiles/cache_lib.dir
 /home/batman/Documents/personal/cppcache/build/CMakeFiles/edit_cache.dir
 /home/batman/Documents/personal/cppcache/build/CMakeFiles/app.dir
+/home/batman/Documents/personal/cppcache/build/CMakeFiles/test.dir
+/home/batman/Documents/personal/cppcache/build/tests/CMakeFiles/rebuild_cache.dir
+/home/batman/Documents/personal/cppcache/build/tests/CMakeFiles/edit_cache.dir
+/home/batman/Documents/personal/cppcache/build/tests/CMakeFiles/test.dir
+/home/batman/Documents/personal/cppcache/build/tests/CMakeFiles/app_cppcache_test.dir
+/home/batman/Documents/personal/cppcache/build/tests/CMakeFiles/app_fileio_test.dir

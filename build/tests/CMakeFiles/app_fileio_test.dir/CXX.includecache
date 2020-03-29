@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Cppcache.hpp
+mutex
+-
+unordered_map
+-
+list
+-
+cstddef
+-
+stdexcept
+-
+iostream
+-
+
+../src/fileIO.cpp
+stdexcept
+-
+iostream
+-
+fstream
+-
+mutex
+-
+thread
+-
+vector
+-
+Cppcache.hpp
+-
+
+/home/batman/Documents/personal/cppcache/tests/tests_file_io.cpp
+../src/fileIO.cpp
+-
+iostream
+-
+gtest/gtest.h
+/home/batman/Documents/personal/cppcache/tests/gtest/gtest.h
+

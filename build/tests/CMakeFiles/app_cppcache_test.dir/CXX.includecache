@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Cppcache.hpp
+mutex
+-
+unordered_map
+-
+list
+-
+cstddef
+-
+stdexcept
+-
+iostream
+-
+
+/home/batman/Documents/personal/cppcache/tests/tests_cppcache.cpp
+Cppcache.hpp
+-
+iostream
+-
+gtest/gtest.h
+/home/batman/Documents/personal/cppcache/tests/gtest/gtest.h
+
