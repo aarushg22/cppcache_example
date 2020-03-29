@@ -1,0 +1,4 @@
+/home/batman/Documents/personal/cppcache/build/CMakeFiles/rebuild_cache.dir
+/home/batman/Documents/personal/cppcache/build/CMakeFiles/cache_lib.dir
+/home/batman/Documents/personal/cppcache/build/CMakeFiles/edit_cache.dir
+/home/batman/Documents/personal/cppcache/build/CMakeFiles/app.dir

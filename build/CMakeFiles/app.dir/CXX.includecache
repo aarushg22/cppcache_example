@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Cppcache.hpp
+unordered_map
+-
+list
+-
+cstddef
+-
+stdexcept
+-
+
+/home/batman/Documents/personal/cppcache/src/main.cpp
+Cppcache.hpp
+/home/batman/Documents/personal/cppcache/src/Cppcache.hpp
+iostream
+-
+
