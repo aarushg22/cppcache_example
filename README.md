@@ -42,14 +42,18 @@ The complexity is constant time for each operation, even the dirty cache update,
 ## Tests
 
 I didn't have a lot of time remaining to finish up a lot of unit tests, sorry about that. 
-I do have some unit tests for the cache library, I tries to configure for fileIO but not enough time.
+I do have some basic unit tests, I tried to configure more cases but not enough time.
 To run the tests after the cmake build, just run:
 ```
 make test
 ```
-If you want to run test individually(but there's only 1 good file with tests), then you can also go to the `tests` folder inside the `build` folder and run:
+If you want to run test individually, then you can also go to the `tests` folder inside the `build` folder and run:
 ```
 ./app_cppcache_test
+```
+or for the fileIO tests : 
+```
+./app_fileio_test 
 ```
 
 #### That's all folks
